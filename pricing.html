@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing &mdash; Anchor Packaging</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <svg class="mark" viewBox="0 0 26 26" fill="none"><rect x="1" y="1" width="24" height="24" rx="6" stroke="#2fb8a6" stroke-width="1.6"/><path d="M8 17V9l5 8V9" stroke="#2fb8a6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Anchor Packaging
+    </a>
+    <div class="navlinks-desktop">
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="security.html">Security</a>
+        <a href="services.html">Services</a>
+        <a href="compute.html">Compute</a>
+        <a href="pricing.html" class="active">Pricing</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="sso.html" class="nav-sso"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l2 2M14 9l2 2"/></svg>SSO / SAML</a>
+        <a href="contact.html" class="nav-cta">Talk to an engineer</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Pricing</div>
+    <h1>A three-tier model that scales with your fleet.</h1>
+    <p>Support fees are fixed monthly. Google Cloud infrastructure is billed separately, at cost.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="table-scroll">
+    <table class="pricing-table">
+      <tr>
+        <th>Feature</th>
+        <th>Startup<small>$299/mo</small></th>
+        <th>Professional<small>$699/mo</small></th>
+        <th>Enterprise / High-Compute<small>Custom</small></th>
+      </tr>
+      <tr><td>VM Instances Included</td><td>Up to 2 Linux instances</td><td>Up to 6 Linux instances</td><td>Unlimited dedicated instances</td></tr>
+      <tr><td>Compute Options</td><td>General Purpose (e2-standard)</td><td>Balanced (n2-standard)</td><td>Compute-Optimized (c2d-standard-112)</td></tr>
+      <tr><td>SSD Storage Capacity</td><td>40 GB SSD Persistent Disk</td><td>200 GB SSD Persistent Disk</td><td>Custom scale (SSD / Hyperdisk)</td></tr>
+      <tr><td>Security Stack</td><td>Standard VPC Firewall</td><td>Advanced Firewall + Cloud Armor</td><td>Custom Isolated VPC + Cloud Armor</td></tr>
+      <tr><td>SSO &amp; Access Setup</td><td>Static restricted SSH keys</td><td>Secure SSH &amp; OS Login</td><td>Full Enterprise SSO / SAML &amp; RBAC</td></tr>
+      <tr><td>Backup Window</td><td>Daily (7-day retention)</td><td>Every 4 hours (30-day retention)</td><td>Custom schedule + multi-region DR</td></tr>
+      <tr><td>Support SLA</td><td>Email support (under 24 hrs)</td><td>Priority Email/Slack (under 4 hrs)</td><td>Dedicated Slack + hotline (under 30 min)</td></tr>
+    </table>
+  </div>
+  <p class="price-note">Google Cloud infrastructure costs are separate and billed directly at cost. The Enterprise / High-Compute tier is the only plan that includes the c2d-standard-112 machine type &mdash; see the <a href="compute.html" style="color:var(--teal-500);">full spec sheet</a>.</p>
+</section>
+
+<section class="dark tight">
+  <div class="wrap" style="text-align:center;">
+    <p class="kicker">Not sure which tier fits?</p>
+    <h2 class="section-title">Tell us about your fleet and we'll recommend one.</h2>
+    <div style="margin-top:24px;">
+      <a href="contact.html" class="btn-primary">Talk to an engineer &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <div class="brand">Anchor Packaging, LLC</div>
+    <div class="foot-links">
+      <a href="security.html">Security</a>
+      <a href="services.html">Services</a>
+      <a href="sso.html">SSO</a>
+      <a href="compute.html">Compute</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>3515 Barrett Parkway Dr Ste 100, Ballwin, MO 63021</div>
+  </div>
+</footer>
+
+</body>
+</html>

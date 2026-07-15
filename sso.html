@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enterprise SSO / SAML &mdash; Anchor Packaging</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <svg class="mark" viewBox="0 0 26 26" fill="none"><rect x="1" y="1" width="24" height="24" rx="6" stroke="#2fb8a6" stroke-width="1.6"/><path d="M8 17V9l5 8V9" stroke="#2fb8a6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Anchor Packaging
+    </a>
+    <div class="navlinks-desktop">
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="security.html">Security</a>
+        <a href="services.html">Services</a>
+        <a href="compute.html">Compute</a>
+        <a href="pricing.html">Pricing</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="sso.html" class="nav-sso active"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l2 2M14 9l2 2"/></svg>SSO / SAML</a>
+        <a href="contact.html" class="nav-cta">Talk to an engineer</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / SSO &amp; Identity</div>
+    <h1>Enterprise SSO architecture, from day one.</h1>
+    <p>Our platform handles critical workloads, so federated identity access control isn't an add-on &mdash; it's how your team accesses every node we manage, from the very first instance.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sso-wrap">
+    <div>
+      <div class="sso-feature">
+        <span class="num">01</span>
+        <div><h4>Identity Integration</h4><p>Full SAML 2.0 and OIDC (OpenID Connect) compatibility with major enterprise identity providers, including Okta, Microsoft Entra ID (formerly Azure AD), Google Workspace, and Ping Identity.</p></div>
+      </div>
+      <div class="sso-feature">
+        <span class="num">02</span>
+        <div><h4>Role-Based Access Control (RBAC)</h4><p>Map your corporate directory security groups directly to specific virtual machine admin privileges &mdash; no manual permission mirroring, no drift between HR systems and infrastructure access.</p></div>
+      </div>
+      <div class="sso-feature">
+        <span class="num">03</span>
+        <div><h4>Secure Console Access</h4><p>Integration with OS Login on Google Cloud means your team signs into Linux nodes with centralized corporate SSO credentials instead of managing individual static SSH keys.</p></div>
+      </div>
+    </div>
+    <div class="idp-panel">
+      <div class="lab">Supported identity providers</div>
+      <div class="idp-list">
+        <div class="idp-item"><span class="sw"></span>Okta</div>
+        <div class="idp-item"><span class="sw"></span>Microsoft Entra ID</div>
+        <div class="idp-item"><span class="sw"></span>Google Workspace</div>
+        <div class="idp-item"><span class="sw"></span>Ping Identity</div>
+      </div>
+      <div class="flow"><b>Directory group</b> &rarr; <b>RBAC policy</b> &rarr; <b>OS Login</b> &rarr; <b>VM shell access</b><br><br>No static keys distributed. Access is revoked centrally the moment a group membership changes &mdash; across every instance, every region.</div>
+    </div>
+  </div>
+</section>
+
+<section class="dark tight">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Why it matters</p>
+      <h2 class="section-title">One identity graph, every instance in sync.</h2>
+      <p>Identity changes propagate across the fleet the same way a security event would &mdash; instantly, and without a manual key rotation.</p>
+    </div>
+    <div class="tech-art">
+      <svg viewBox="0 0 1180 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="gridsso" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M40 0H0V40" fill="none" stroke="rgba(154,168,191,0.08)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="1180" height="300" fill="url(#gridsso)"/>
+        <circle class="node-blue float" cx="130" cy="150" r="10"/>
+        <text x="130" y="180" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5b6b85">IdP</text>
+        <g class="edge-active">
+          <line x1="130" y1="150" x2="420" y2="150"/>
+        </g>
+        <circle class="node pulse" cx="420" cy="150" r="9"/>
+        <text x="420" y="180" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5b6b85">RBAC policy</text>
+        <g class="edge">
+          <line x1="420" y1="150" x2="700" y2="70"/>
+          <line x1="420" y1="150" x2="700" y2="150"/>
+          <line x1="420" y1="150" x2="700" y2="230"/>
+        </g>
+        <circle class="node-dim" cx="700" cy="70" r="6"/>
+        <circle class="node-dim" cx="700" cy="150" r="6"/>
+        <circle class="node-dim" cx="700" cy="230" r="6"/>
+        <text x="880" y="76" font-family="JetBrains Mono, monospace" font-size="10" fill="#5b6b85">vm-node-01</text>
+        <text x="880" y="156" font-family="JetBrains Mono, monospace" font-size="10" fill="#5b6b85">vm-node-02</text>
+        <text x="880" y="236" font-family="JetBrains Mono, monospace" font-size="10" fill="#5b6b85">vm-node-03</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="text-align:center;padding-top:0;">
+  <a href="contact.html" class="btn-primary">Set up SSO for your fleet &rarr;</a>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <div class="brand">Anchor Packaging, LLC</div>
+    <div class="foot-links">
+      <a href="security.html">Security</a>
+      <a href="services.html">Services</a>
+      <a href="sso.html">SSO</a>
+      <a href="compute.html">Compute</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>3515 Barrett Parkway Dr Ste 100, Ballwin, MO 63021</div>
+  </div>
+</footer>
+
+</body>
+</html>
