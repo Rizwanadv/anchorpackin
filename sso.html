@@ -25,6 +25,7 @@
         <a href="pricing.html">Pricing</a>
       </nav>
       <div class="nav-actions">
+        <span id="authArea" class="auth-area"></span>
         <a href="sso.html" class="nav-sso active"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l2 2M14 9l2 2"/></svg>SSO / SAML</a>
         <a href="contact.html" class="nav-cta">Talk to an engineer</a>
       </div>
@@ -108,8 +109,16 @@
 </section>
 
 <section class="wrap" style="text-align:center;padding-top:0;">
-  <a href="contact.html" class="btn-primary">Set up SSO for your fleet &rarr;</a>
+  <p class="kicker" style="text-align:center;">Try it yourself</p>
+  <h2 class="section-title" style="text-align:center;">See the sign-in flow in action.</h2>
+  <p style="color:var(--slate-500);max-width:520px;margin:0 auto 24px;">This demo uses Google sign-in to show how a federated login works end to end. A production deployment would connect to your own SAML/OIDC identity provider instead.</p>
+  <div class="auth-area" style="justify-content:center;margin-bottom:28px;"></div>
+  <a href="contact.html" class="btn-primary">Set up enterprise SSO for your fleet &rarr;</a>
 </section>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="assets/firebase-auth.js"></script>
 
 <footer>
   <div class="wrap foot-row">
